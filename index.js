@@ -4,7 +4,7 @@ const routerApi = require('./routes')
 const { logErr, errHandler, boomErrorHandler } = require('./middlewares/error.handler')
 const app = express()
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 const whiteList = ['http://localhost:8080', 'https://static.platzi.com']
 const options = {
